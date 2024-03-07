@@ -1,1 +1,105 @@
-<p>success works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Success Stories</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header-->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">JANNAH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="success">SUCCESS STORY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carte">Carte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acualite">Actualite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Section pour le texte en mode défilement -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="mb-4">
+                <div class="scrolling-text">Success Stories</div>
+            </h2>
+        </div>
+    </section>
+     <!-- Section pour les Success Stories -->
+     <section class="py-5">
+        <div class="container">
+           
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nom de la société 1</h5>
+                            <p class="card-text">Site Web: <a href="#">www.societe1.com</a></p>
+                            <p class="card-text">Emplacement: Tunis, Tunisie</p>
+                            <p class="card-text">Téléphone: +216 71 234 567</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nom de la société 2</h5>
+                            <p class="card-text">Site Web: <a href="#">www.societe2.com</a></p>
+                            <p class="card-text">Emplacement: Sousse, Tunisie</p>
+                            <p class="card-text">Téléphone: +216 72 345 678</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajoutez plus de Success Stories en ajoutant plus de colonnes selon vos besoins -->
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
